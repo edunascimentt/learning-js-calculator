@@ -1,16 +1,19 @@
-const display = document.getElementById("calculator-display");
-const buttons = document.querySelectorAll(".button");
+const display = document.getElementById("display");
 
-// buttons.forEach(function(button) {
-//     button.addEventListener("click", function(event) {
-//         button.classList.contains("number") {
-
-//         }
-//     });
-// });
-
-function hello(name, age) {
-    console.log("Hello " + name + ", your are " + age + " years old.");
+function showonDisplay(input) {
+    display.value += input
 }
 
-hello("Eduardo", 17);
+function clearDisplay() {
+    display.value  = "";
+}
+
+function calculate() {
+    try {
+        display.value = eval(display.value)
+    }
+    
+    catch(error) {
+        display.value = "Error =("
+    }
+}

@@ -10,28 +10,28 @@
 </head>
 <body>
     <section class="calculator">
-        <h1><input type="text" id="calculator-display" placeholder="0" disabled></h1>
+        <h1><input type="text" id="display" placeholder="0" disabled></h1>
         <div class="calculator-buttons">
-            <button class="button clear gray">AC</button>
-            <button class="button gray">+/-</button>
-            <button class="button operator gray">%</button>
-            <button class="button operator orange">/</button>
-            <button class="button number dark-gray">7</button>
-            <button class="button number dark-gray">8</button>
-            <button class="button number dark-gray">9</button>
-            <button class="button operator orange">X</button>
-            <button class="button number dark-gray">4</button>
-            <button class="button number dark-gray">5</button>
-            <button class="button number dark-gray">6</button>
-            <button class="button operator orange">-</button>
-            <button class="button number dark-gray">1</button>
-            <button class="button number dark-gray">2</button>
-            <button class="button number dark-gray">3</button>
-            <button class="button operator orange">+</button>
-            <button class="button  dark-gray"></button>
-            <button class="button number dark-gray">0</button>
-            <button class="button  dark-gray">,</button>
-            <button class="button equal orange">=</button>
+            <button onclick="clearDisplay()" class="button clear gray">AC</button>
+            <button onclick="showonDisplay()" class="button gray">+/-</button>
+            <button onclick="showonDisplay('%')" class="button gray">%</button>
+            <button onclick="showonDisplay('/')" class="button orange">/</button>
+            <button onclick="showonDisplay('7')" class="button dark-gray">7</button>
+            <button onclick="showonDisplay('8')" class="button dark-gray">8</button>
+            <button onclick="showonDisplay('9')" class="button dark-gray">9</button>
+            <button onclick="showonDisplay('*')" class="button orange">*</button>
+            <button onclick="showonDisplay('4')" class="button dark-gray">4</button>
+            <button onclick="showonDisplay('5')" class="button dark-gray">5</button>
+            <button onclick="showonDisplay('6')" class="button dark-gray">6</button>
+            <button onclick="showonDisplay('-')" class="button orange">-</button>
+            <button onclick="showonDisplay('1')" class="button dark-gray">1</button>
+            <button onclick="showonDisplay('2')" class="button dark-gray">2</button>
+            <button onclick="showonDisplay('3')" class="button dark-gray">3</button>
+            <button onclick="showonDisplay('+')" class="button orange">+</button>
+            <button onclick="showonDisplay('')" class="button dark-gray"></button>
+            <button onclick="showonDisplay('0')" class="button dark-gray">0</button>
+            <button onclick="showonDisplay(',')" class="button dark-gray">,</button>
+            <button onclick="calculate()" class="button orange">=</button>
         </div>
     </section>
 </body>
